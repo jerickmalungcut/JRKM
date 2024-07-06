@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -47,8 +48,9 @@ body::-webkit-scrollbar {
 }
 
 .heading h1 {
-  font-family: "Silkscreen", sans-serif;
-  font-weight: 400;
+  font-family: "Kode Mono", monospace;
+  font-weight: 600;
+  font-optical-sizing: auto;
 }
 
 .heading p,

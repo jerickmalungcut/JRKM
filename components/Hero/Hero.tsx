@@ -1,9 +1,8 @@
-import ButtonPrimary from "./ButtonPrimary";
-import TopNavigation from "./TopNavigation";
-import { HeroGlobe } from "./ui/HeroGlobe";
-import { FlipWords } from "./ui/flip-words";
-import { SparklesCore } from "./ui/sparkles";
-import Hero1 from "../public/images/heroimage1.png";
+import ButtonPrimary from "../ButtonPrimary";
+import TopNavigation from "../TopNavigation";
+import { HeroGlobe } from "../ui/HeroGlobe";
+import { FlipWords } from "../ui/flip-words";
+import Hero1 from "../../public/images/heroimage1.png";
 import Image from "next/image";
 import { FaRegPaperPlane } from "react-icons/fa";
 
@@ -16,19 +15,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className="min-h-screen w-full relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-full z-10">
-        <SparklesCore
-          id="tsparticlesfullpage"
-          background="transparent"
-          minSize={0.6}
-          maxSize={1.4}
-          particleDensity={20}
-          className="w-full h-screen"
-          particleColor="#87CEEB"
-        />
-      </div>
-
+    <div className="min-h-screen w-full relative overflow-hidden" id="home">
       <TopNavigation />
 
       <div className="absolute top-0 left-0 h-screen w-full z-50">
@@ -40,12 +27,12 @@ const Hero = () => {
                 Welcome! I&apos;m{" "}
                 <span className="text-blue-400">Jerick Malungcut,</span>
               </h3>
-              <h1 className="text-7xl font-bold tracking-normal leading-[5rem] text-white">
+              <h1 className="text-7xl font-bold uppercase tracking-normal leading-[5rem] bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent">
                 <span className="">Specializing in</span> <br />{" "}
                 {/* Animated Jobs */}
                 <FlipWords words={words} />
               </h1>
-              <p className="text-2xl text-slate-500 uppercase tracking-wider">
+              <p className="text-2xl text-blue-300 uppercase tracking-wider">
                 Bringing your Online Ideas to Life with Precision.
               </p>
 
