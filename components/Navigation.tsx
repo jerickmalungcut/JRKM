@@ -2,7 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { BiHomeAlt, BiUser } from "react-icons/bi";
-import { BsClipboardData, BsBriefcase, BsChatSquare } from "react-icons/bs";
+import { BsBriefcase } from "react-icons/bs";
+import { GrProjects } from "react-icons/gr";
+import { IoChatboxEllipsesOutline } from "react-icons/io5";
 import Link from "next/link";
 
 const Navigation = () => {
@@ -57,15 +59,15 @@ const Navigation = () => {
               <BiUser />
             </div>
           </Link>
-          <Link href="#services" passHref>
+          <Link href="#projects" passHref>
             <div
               className={`cursor-pointer w-[60px] h-[60px] flex justify-center items-center ${
-                activeSection === "services"
+                activeSection === "projects"
                   ? "text-blue-400 border rounded-lg border-blue-400"
                   : "text-white/50"
               }`}
             >
-              <BsClipboardData />
+              <GrProjects />
             </div>
           </Link>
           <Link href="#work" passHref>
@@ -87,7 +89,7 @@ const Navigation = () => {
                   : "text-white/50"
               }`}
             >
-              <BsChatSquare />
+              <IoChatboxEllipsesOutline />
             </div>
           </Link>
         </div>

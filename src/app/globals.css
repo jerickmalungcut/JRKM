@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -28,6 +29,12 @@
 
   .container {
     @apply max-w-screen-xl mx-auto px-4;
+  }
+}
+
+@layer utilities {
+  .ig-color {
+    @apply bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent;
   }
 }
 
@@ -60,6 +67,12 @@ body::-webkit-scrollbar {
   font-weight: 400;
 }
 
+.section-heading {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* Hero Image Glitch */
 
 .glitch {
@@ -67,6 +80,20 @@ body::-webkit-scrollbar {
   overflow: hidden;
   height: 550px;
   width: 550px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .glitch {
+    height: 384px;
+    width: 384px;
+  }
+}
+
+@media (max-width: 768px) {
+  .glitch {
+    height: 288px;
+    width: 288px;
+  }
 }
 
 .hero-img {

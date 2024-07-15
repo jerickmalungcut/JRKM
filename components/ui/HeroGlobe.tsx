@@ -394,7 +394,7 @@ export function HeroGlobe() {
   ];
 
   return (
-    <div className="flex items-center justify-center py-20 h-full absolute z-30 w-full">
+    <div className="flex items-center justify-center py-20 h-full absolute z-20 w-full">
       <div className="relative w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent" />
       <div className="absolute w-full bottom-[-50%] h-full z-10">
         <World data={sampleArcs} globeConfig={globeConfig} />

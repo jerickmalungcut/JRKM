@@ -26,139 +26,35 @@ export const navItems = [
   },
 ];
 
-export const aboutIcons = [
-  {
-    id: 1,
-    title: "HTML 5",
-    img: "/images/html.png",
-    imgClass: "h-8 w-8",
-  },
-  {
-    id: 2,
-    title: "CSS3",
-    img: "/images/css.png",
-    imgClass: "h-8 w-8",
-  },
-  {
-    id: 3,
-    title: "Javascript",
-    img: "/images/javascript.png",
-    imgClass: "h-8 w-8",
-  },
-  {
-    id: 4,
-    title: "Bootstrap",
-    img: "/images/bootstrap.png",
-    imgClass: "h-8 w-8",
-  },
-  {
-    id: 5,
-    title: "jQuery",
-    img: "/images/jquery.png",
-    imgClass: "h-8 w-8",
-  },
-  {
-    id: 6,
-    title: "Wordpress",
-    img: "/images/wordpress.png",
-    imgClass: "h-8 w-8",
-  },
-  {
-    id: 7,
-    title: "Shopify",
-    img: "/images/shopify.png",
-    imgClass: "h-8 w-8",
-  },
-  {
-    id: 8,
-    title: "cPanel",
-    img: "/images/cpanel.png",
-    imgClass: "h-8 w-8",
-  },
-  {
-    id: 9,
-    title: "Git",
-    img: "/images/git.png",
-    imgClass: "h-8 w-8",
-  },
-  {
-    id: 10,
-    title: "Github",
-    img: "/images/github.png",
-    imgClass: "h-8 w-8",
-  },
-  {
-    id: 11,
-    title: "SASS",
-    img: "/images/sass.png",
-    imgClass: "h-8 w-8",
-  },
-  {
-    id: 12,
-    title: "ReactJS",
-    img: "/images/react.png",
-    imgClass: "h-8 w-8",
-  },
-  {
-    id: 13,
-    title: "NextJS",
-    img: "/images/nextjs.png",
-    imgClass: "h-8 w-8",
-  },
-  {
-    id: 14,
-    title: "NodeJS",
-    img: "/images/nodejs.png",
-    imgClass: "h-8 w-8",
-  },
-  {
-    id: 15,
-    title: "NPM",
-    img: "/images/npm.png",
-    imgClass: "h-8 w-8",
-  },
-  {
-    id: 16,
-    title: "PHP",
-    img: "/images/php.png",
-    imgClass: "h-8 w-8",
-  },
-  {
-    id: 17,
-    title: "Figma",
-    img: "/images/figma.png",
-    imgClass: "h-8 w-8",
-  },
-  {
-    id: 18,
-    title: "Adobe XD",
-    img: "/images/xd.png",
-    imgClass: "h-8 w-8",
-  },
-  {
-    id: 19,
-    title: "Adobe Photoshop",
-    img: "/images/photoshop.png",
-    imgClass: "h-8 w-8",
-  },
-  {
-    id: 20,
-    title: "Adobe Illustrator",
-    img: "/images/illustrator.png",
-    imgClass: "h-8 w-8",
-  },
-  {
-    id: 21,
-    title: "Adobe Premiere Pro",
-    img: "/images/premierepro.png",
-    imgClass: "h-8 w-8",
-  },
-  {
-    id: 22,
-    title: "Adobe After Effects",
-    img: "/images/aftereffects.png",
-    imgClass: "h-8 w-8",
-  },
+export const techStackWeb = [
+  "HTML 5",
+  "CSS 3",
+  "Javascipt ES6",
+  "Bootstrap",
+  "SASS",
+  "TailwindCSS",
+  "jQuery",
+  "ReactJS",
+  "NextJS",
+  "Wordpress",
+  "Shopify",
+  "Github",
+];
+
+export const techStackGraphic = [
+  "Figma Design",
+  "Adobe XD",
+  "Adobe Photoshop",
+  "Adobe Illustrator",
+  "Adobe Premiere Pro",
+  "Adobe After Effects",
+];
+
+export const words = [
+  "Web Developer",
+  "UI/UX Designer",
+  "Tech Support",
+  "Graphic Designer",
 ];
 
 export const workExperience = [
@@ -211,5 +107,107 @@ export const workExperience = [
     description:
       "Oversee and support trouble ticket activity and work orders as required. \nPerforms IT Desktop Support job responsibilities. \nRemotes the desktop computer of call center agents. \nIn charge in cable grooming and desktop maintenance.",
     img: "/images/stream.png",
+  },
+];
+
+export interface Project {
+  id: number;
+  category: string;
+  title: string;
+  img: string;
+  link: string;
+}
+
+export const projects: Project[] = [
+  {
+    id: 1,
+    category: "Web Development",
+    title: "Project 1",
+    img: "/images/webdev1.jpg",
+    link: "#demo",
+  },
+  {
+    id: 2,
+    category: "Web Development",
+    title: "Project 2",
+    img: "/images/webdev2.jpg",
+    link: "#demo",
+  },
+  {
+    id: 3,
+    category: "Web Development",
+    title: "Project 2",
+    img: "/images/webdev3.jpg",
+    link: "#demo",
+  },
+  {
+    id: 4,
+    category: "Web Development",
+    title: "Project 2",
+    img: "/images/webdev4.jpg",
+    link: "#demo",
+  },
+  {
+    id: 5,
+    category: "Web Design",
+    title: "Project 2",
+    img: "/images/webdesign1.jpg",
+    link: "#demo",
+  },
+  {
+    id: 6,
+    category: "Web Design",
+    title: "Project 2",
+    img: "/images/webdesign2.jpg",
+    link: "#demo",
+  },
+  {
+    id: 7,
+    category: "Web Design",
+    title: "Project 2",
+    img: "/images/webdesign3.jpg",
+    link: "#demo",
+  },
+  {
+    id: 8,
+    category: "Web Design",
+    title: "Project 2",
+    img: "/images/webdesign4.jpg",
+    link: "#demo",
+  },
+  {
+    id: 9,
+    category: "Web Design",
+    title: "Project 2",
+    img: "/images/webdesign5.jpg",
+    link: "#demo",
+  },
+  {
+    id: 10,
+    category: "Graphic Design",
+    title: "Project 2",
+    img: "/images/graphic1.jpg",
+    link: "#demo",
+  },
+  {
+    id: 11,
+    category: "Graphic Design",
+    title: "Project 2",
+    img: "/images/graphic2.jpg",
+    link: "#demo",
+  },
+  {
+    id: 12,
+    category: "Graphic Design",
+    title: "Project 2",
+    img: "/images/graphic3.jpg",
+    link: "#demo",
+  },
+  {
+    id: 13,
+    category: "Graphic Design",
+    title: "Project 2",
+    img: "/images/graphic4.jpg",
+    link: "#demo",
   },
 ];

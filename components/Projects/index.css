@@ -1,0 +1,149 @@
+/* Container for Projects */
+.project-list {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  z-index: 50;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 3rem;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  border: 1px solid #0070f3;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .tab {
+    font-size: 0.8rem;
+  }
+}
+
+.tab:hover,
+.tab.active {
+  background-color: #0070f3;
+  color: white;
+}
+
+/* Project Cards */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card {
+  width: 400px;
+  padding: 10px;
+  background-color: transparent;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+  border-radius: 30px;
+}
+
+.project-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.project-card:hover h3 {
+  display: block;
+}
+
+.project-card h3 {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: none;
+}
+
+.card-img {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  z-index: 101;
+}
+
+.modal-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.modal-content h3 {
+  margin: 20px 0;
+}
+
+.modal-content .btn {
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content .btn:hover {
+  background-color: #005bb5;
+}
+
+.close {
+  position: absolute;
+  top: -2rem;
+  right: 0;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 102;
+}
