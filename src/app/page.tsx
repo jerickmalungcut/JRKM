@@ -8,6 +8,7 @@ import Sparkles from "@/components/Sparkles";
 import Work from "@/components/Work/Work";
 import { Suspense } from "react";
 import Loading from "@/components/loading";
+import { Testimonial } from "@/components/Testimonial/Testimonial";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <InfiniteMarquee />
         <About />
         <Projects />
+        <Testimonial />
         <Work />
         <Contact />
         <Sparkles />

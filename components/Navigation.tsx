@@ -59,6 +59,7 @@ const Navigation = () => {
               <BiUser />
             </div>
           </Link>
+
           <Link href="#projects" passHref>
             <div
               className={`cursor-pointer w-[60px] h-[60px] flex justify-center items-center ${
@@ -70,6 +71,7 @@ const Navigation = () => {
               <GrProjects />
             </div>
           </Link>
+
           <Link href="#work" passHref>
             <div
               className={`cursor-pointer w-[60px] h-[60px] flex justify-center items-center ${

@@ -28,7 +28,7 @@ const Work = () => {
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}
           >
-            <div className="order-1 w-full lg:w-5/12 border border-white/20 rounded-lg p-4 flex flex-col gap-3 hover:bg-blue-900/10 hover:-translate-y-4 transition-all duration-300">
+            <div className="glow order-1 w-full lg:w-5/12 border border-white/20 rounded-lg p-6 flex flex-col gap-3 hover:bg-blue-900/10 hover:-translate-y-4 transition-all duration-300">
               <p className="text-base text-gray-400">{item.year}</p>
               <h4 className="font-bold text-base md:text-xl text-blue-500">
                 {item.position}
@@ -39,7 +39,7 @@ const Work = () => {
                   {item.location}
                 </span>
               </p>
-              <p className="text-xs md:text-sm text-gray-400 flex flex-col">
+              <p className="text-xs md:text-sm text-gray-400 flex flex-col lg:gap-2">
                 {item.description.split("\n").map((line, index) => (
                   <span key={index}>{line}</span>
                 ))}

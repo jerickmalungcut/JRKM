@@ -15,7 +15,7 @@ import { words } from "@/data";
 
 const Hero = () => {
   return (
-    <div className="min-h-screen w-full relative overflow-hidden" id="home">
+    <section className="min-h-screen w-full relative overflow-hidden" id="home">
       <TopNavigation />
 
       <div className="absolute top-0 left-0 h-screen w-full z-50">
@@ -93,7 +93,7 @@ const Hero = () => {
       </div>
 
       <SocialIcons />
-    </div>
+    </section>
   );
 };
 export default Hero;

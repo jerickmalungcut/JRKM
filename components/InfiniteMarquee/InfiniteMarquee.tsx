@@ -5,7 +5,11 @@ const InfiniteMarquee = () => {
   return (
     <div className="text-wrapper">
       <div className="marquee-content">
-        <h6>Hello there! You can get in touch with me via</h6>
+        <h6>
+          Reach out today and let&apos;s discuss how I can help you achieve your
+          goals. Whether you need a stunning website, compelling graphic design,
+          or any other digital solution, I&apos;m here to assist you.
+        </h6>
         <h6 className="flex items-center gap-4">
           {" "}
           <Image
@@ -15,7 +19,7 @@ const InfiniteMarquee = () => {
             width={5}
             height={5}
           />{" "}
-          Whats App: +63916 920 8102
+          Whats App: (+63)962 351 3976
         </h6>
         <h6 className="flex items-center gap-4">
           {" "}
@@ -26,7 +30,7 @@ const InfiniteMarquee = () => {
             height={5}
             width={5}
           />{" "}
-          Business Email Address: jerickmalungcut@jrkm.com
+          Email Address: jrkm@jerickmalungcut.com
         </h6>
         <h6 className="flex items-center gap-4">
           <Image
@@ -36,9 +40,13 @@ const InfiniteMarquee = () => {
             width={5}
             height={3}
           />
-          Gmail Address: jerickmalungcutdev@gmail.com
+          Gmail: jerickmalungcutdev@gmail.com
         </h6>
-        <h6>Hello there! You can get in touch with me via</h6>
+        <h6>
+          Reach out today and let&apos;s discuss how I can help you achieve your
+          goals. Whether you need a stunning website, compelling graphic design,
+          or any other digital solution, I&apos;m here to assist you.
+        </h6>
         <h6 className="flex items-center gap-4">
           {" "}
           <Image
@@ -48,7 +56,7 @@ const InfiniteMarquee = () => {
             width={5}
             height={5}
           />{" "}
-          Whats App: +63916 920 8102
+          Whats App: (+63)962 351 3976
         </h6>
         <h6 className="flex items-center gap-4">
           {" "}
@@ -59,7 +67,7 @@ const InfiniteMarquee = () => {
             height={5}
             width={5}
           />{" "}
-          Business Email Address: jerickmalungcut@jrkm.com
+          Email Address: jrkm@jerickmalungcut.com
         </h6>
         <h6 className="flex items-center gap-4">
           <Image
@@ -69,7 +77,7 @@ const InfiniteMarquee = () => {
             width={5}
             height={3}
           />
-          Gmail Address: jerickmalungcutdev@gmail.com
+          Gmail: jerickmalungcutdev@gmail.com
         </h6>
       </div>
     </div>

@@ -65,7 +65,7 @@ export const workExperience = [
     location: "Work From Home, Philippines",
     year: "2020-2024",
     description:
-      "Collaborate with fellow developers to develop new approaches for creating more-expressive websites for the company.\nCreating a suitable color scheme or incorporating the client’s color scheme into the design.\n Creating mock-ups of the site for the client’s approval. \nFixing any functionality issues, including the removal of dead links. \nUpdating and maintaining the site.",
+      "Collaborate with fellow developers to develop new approaches for creating more-expressive websites for the company.\nCreating a suitable color scheme or incorporating the client’s color scheme into the design.\n Creating mock-ups of the site for the client’s approval. \nFixing any functionality issues, including the removal of dead links. \nUpdating and maintaining the site. \n Lay out content on web pages and test on different browsers and ensure people with different 	computers can access a website.",
     img: "/images/upwork.png",
   },
   {
@@ -75,7 +75,7 @@ export const workExperience = [
     location: "Balibago Angeles City Pampanga, Philippines",
     year: "2018-2020",
     description:
-      "Create and design various materials for digital and print. \nEnsure projects are completed in a timely manner with a quality product.\nWork with a wide range of media and graphic design software.\nEstablish creative direction for the company within brand guidelines.\nImplement feedback and changes whenever possible.",
+      "Create and design various materials for digital and print. \nEnsure projects are completed in a timely manner with a quality product.\nWork with a wide range of media and graphic design software.\nEstablish creative direction for the company within brand guidelines.\nImplement feedback and changes whenever possible. \nShoot photos and videos for company needs and requirements",
     img: "/images/tbr.png",
   },
   {
@@ -116,98 +116,143 @@ export interface Project {
   title: string;
   img: string;
   link: string;
+  tech: string;
 }
 
 export const projects: Project[] = [
   {
     id: 1,
     category: "Web Development",
-    title: "Project 1",
+    title: "Crypt Land",
+    tech: "Tailwind CSS, NextJS, Typescript, Vercel",
     img: "/images/webdev1.jpg",
-    link: "#demo",
+    link: "#404",
   },
   {
     id: 2,
     category: "Web Development",
-    title: "Project 2",
+    title: "Ada",
+    tech: "Tailwind CSS, NextJS, Typescript",
     img: "/images/webdev2.jpg",
-    link: "#demo",
+    link: "#404",
   },
   {
     id: 3,
     category: "Web Development",
-    title: "Project 2",
+    title: "Stract",
+    tech: "Wordpress, Tailwind",
     img: "/images/webdev3.jpg",
-    link: "#demo",
+    link: "#404",
   },
   {
     id: 4,
     category: "Web Development",
-    title: "Project 2",
+    title: "Flowbase",
+    tech: "NextJS, Tailwindcss, Webflow",
     img: "/images/webdev4.jpg",
-    link: "#demo",
+    link: "#404",
   },
   {
     id: 5,
-    category: "Web Design",
-    title: "Project 2",
-    img: "/images/webdesign1.jpg",
-    link: "#demo",
+    category: "Web Development",
+    title: "ClarityU",
+    tech: "ReactJS, Javascript, Tailwind",
+    img: "/images/webdev5.jpg",
+    link: "#404",
   },
   {
     id: 6,
     category: "Web Design",
-    title: "Project 2",
-    img: "/images/webdesign2.jpg",
-    link: "#demo",
+    title: "Clarity",
+    tech: "Figma Design, Photoshop",
+    img: "/images/webdev6.jpg",
+    link: "#404",
   },
   {
     id: 7,
     category: "Web Design",
-    title: "Project 2",
-    img: "/images/webdesign3.jpg",
-    link: "#demo",
+    title: "FieldGuide",
+    tech: "Figma Design, Photoshop",
+    img: "/images/webdev7.jpg",
+    link: "#404",
   },
   {
     id: 8,
     category: "Web Design",
-    title: "Project 2",
-    img: "/images/webdesign4.jpg",
-    link: "#demo",
+    title: "Cobait",
+    tech: "Adobe XD, Photoshop",
+    img: "/images/webdev8.jpg",
+    link: "#404",
   },
   {
     id: 9,
     category: "Web Design",
-    title: "Project 2",
-    img: "/images/webdesign5.jpg",
-    link: "#demo",
+    title: "Raycast",
+    tech: "Figma Design, Photoshop, Gemini ",
+    img: "/images/webdev9.jpg",
+    link: "#404",
   },
   {
     id: 10,
-    category: "Graphic Design",
-    title: "Project 2",
-    img: "/images/graphic1.jpg",
-    link: "#demo",
+    category: "Web Design",
+    title: "Vesto",
+    tech: "Figma Design, Photoshop",
+    img: "/images/webdev10.jpg",
+    link: "#404",
   },
   {
     id: 11,
     category: "Graphic Design",
-    title: "Project 2",
-    img: "/images/graphic2.jpg",
-    link: "#demo",
+    title: "Loddi Banner",
+    tech: "Photoshop, Illustrator",
+    img: "/images/graphic1.jpg",
+    link: "#404",
   },
   {
     id: 12,
     category: "Graphic Design",
-    title: "Project 2",
-    img: "/images/graphic3.jpg",
-    link: "#demo",
+    title: "SzethTV Logo",
+    tech: "Photoshop, Illustrator",
+    img: "/images/graphic2.jpg",
+    link: "#404",
+  },
+];
+
+export const testimonies = [
+  {
+    name: "Rachelle Rivera",
+    position: "Marketing Manager at Rachmor Online Solutions",
+    comment:
+      "Jerick's graphic design skills are unparalleled. His keen eye for detail and innovative approach to design have significantly enhanced our brand's visual identity. His web design projects are equally impressive, showcasing a perfect blend of creativity and functionality. We couldn't be happier with the results and highly recommend Jerick for any graphic and web design needs.",
   },
   {
-    id: 13,
-    category: "Graphic Design",
-    title: "Project 2",
-    img: "/images/graphic4.jpg",
-    link: "#demo",
+    name: "Jessica Williams",
+    position: "UI/UX Designer at PixelWave Designs",
+    comment:
+      "Working with Jerick has been an absolute pleasure. His expertise in graphic design brought our ideas to life with stunning visuals that exceeded our expectations. Additionally, his web design work is top-notch, providing us with a user-friendly and visually appealing website. Jerick's professionalism and dedication to excellence make him an invaluable asset to any project.",
+  },
+  {
+    name: "Emily Davis",
+    position: "Content Strategist at BlueSky Creatives",
+    comment:
+      "His ability to understand our vision and translate it into beautiful, functional designs is truly remarkable. The websites he creates are not only aesthetically pleasing but also highly responsive and user-friendly. Jerick's work has significantly boosted our online presence, and we highly recommend his services to anyone looking for exceptional design work.",
+  },
+  {
+    name: "David Smith",
+    position: "Front-end Developer at DigitalEcho Studios",
+    comment:
+      "Jerick's graphic design and web design services have been transformative for our business. His attention to detail and creative vision brought our brand to life in a way we never imagined. The website he designed is not only visually stunning but also user-friendly, making it easier for our customers to navigate and shop. Jerick's professionalism and dedication to delivering top-quality work make him an invaluable partner for any business looking to enhance their online presence.",
+  },
+  {
+    name: "Sarah Wilson",
+    position: "Brand Strategist at BrightWave Media",
+    comment:
+      "Working with Jerick has been a fantastic experience. His expertise in graphic design and web design is truly exceptional. He took our outdated website and transformed it into a modern, engaging platform that has significantly increased our user engagement. Jerick's ability to understand our vision and translate it into a cohesive, aesthetically pleasing design exceeded our expectations. We highly recommend his services to anyone in need of a skilled and reliable designer.",
+  },
+  {
+    name: "James Anderson",
+    position: "Senior Developer at CreativeSpark Studio",
+    comment:
+      "From the initial consultation to the final product, he was attentive, creative, and responsive to our needs. The website he developed for us is not only beautiful but also optimized for performance and accessibility, reflecting our brand perfectly. Jerick's designs have helped us attract more clients and establish a stronger online presence. We couldn't be happier with the results and look forward to collaborating with him on future projects.",
   },
 ];

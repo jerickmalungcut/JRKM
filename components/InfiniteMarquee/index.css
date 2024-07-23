@@ -10,7 +10,7 @@
   display: flex;
   white-space: nowrap;
   gap: 1rem;
-  animation: move-rtl 40s linear infinite;
+  animation: move-rtl 60s linear infinite;
 }
 
 .marquee-content:hover {
@@ -22,7 +22,8 @@
   white-space: nowrap;
   padding: 1rem;
   letter-spacing: 1px;
-  color: #60a5fa;
+  color: #95c5ff;
+  font-family: monospace;
 }
 
 @media (max-width: 768px) {
@@ -33,12 +34,12 @@
 
 @keyframes move-rtl {
   0% {
+    transform: translateX(10%);
+  }
+  /* 50% {
     transform: translateX(0%);
-  }
-  50% {
-    transform: translateX(-50%);
-  }
+  } */
   100% {
-    transform: translateX(0%);
+    transform: translateX(-100%);
   }
 }

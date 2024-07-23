@@ -21,15 +21,15 @@ const Projects = () => {
       : projects.filter((project) => project.category === currentTab);
 
   return (
-    <div id="projects" className="project-list container min-h-screen">
+    <section className="project-list container min-h-screen" id="projects">
       <Heading mainHeading="Project" subHeading="Featured" />
       <ProjectTabs currentTab={currentTab} setCurrentTab={setCurrentTab} />
 
-      <motion.div className="projects">
+      <div className="projects">
         {filteredProjects.map((project) => (
           <motion.div
             key={project.id}
-            variants={fadeIn("up", 0.5)}
+            variants={fadeIn("down", 0)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.7 }}
@@ -43,13 +43,14 @@ const Projects = () => {
                 width={400}
                 height={250}
                 className="w-auto h-auto"
+                priority
               />
             </div>
 
             <h3>{project.title}</h3>
           </motion.div>
         ))}
-      </motion.div>
+      </div>
 
       {selectedProject && (
         <div className="modal">
@@ -60,21 +61,26 @@ const Projects = () => {
             <Image
               src={selectedProject.img}
               alt={selectedProject.title}
-              width={600}
-              height={400}
+              width={500}
+              height={300}
+              className="h-auto w-auto"
+              priority
             />
-            <h3>{selectedProject.title}</h3>
-            <a
-              href={selectedProject.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="btn">Live Demo</button>
-            </a>
+            <div className="flex items-center justify-between gap-4 md:gap-8 px-4 mt-6">
+              <h3 className="text-sm">{selectedProject.title}</h3>
+              <span className="text-white text-xs">{selectedProject.tech}</span>
+              <a
+                href={selectedProject.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="btn">Check Live Site</button>
+              </a>
+            </div>
           </div>
         </div>
       )}
-    </div>
+    </section>
   );
 };
 export default Projects;

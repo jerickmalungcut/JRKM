@@ -10,7 +10,7 @@ const Heading: React.FC<HeadingProps> = ({ mainHeading, subHeading }) => {
   return (
     <div className="section-heading">
       <motion.h1
-        className="text-blue-400/20 text-5xl md:text-7xl lg:text-9xl text-center font-extralight tracking-wider py-16 md:py-20 lg:py-24 relative uppercase"
+        className="text-blue-400/20 text-5xl md:text-7xl lg:text-8xl text-center font-extralight tracking-wider py-16 md:py-20 lg:py-24 relative uppercase"
         variants={fadeIn("up", 0.5)}
         initial="hidden"
         whileInView={"show"}
